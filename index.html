@@ -68,31 +68,24 @@
                 </div>
             </div>
         </section>
+        
+        <div id="site-footer"></div>
 
-        <!-- contact me section-->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <h4>For Business Inquiries</h4>
-            <p>E-Mail: douglasalexstrange@gmail.com</p>
-
-            <a href="https://www.linkedin.com/in/douglas-strange-2a3532232/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-
-
-        </section>
     </main>
 
-    <!-- footer-->
-    <footer>
-        <p>&copy; 2024 Douglas Strange, All Rights Reserved</p>
-    </footer>
+    
 
     <script>
         fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('site-header').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('site-footer').innerHTML = data;
             });
     </script>
 
