@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="uniform.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+
+    <div id="site-header"></div>
+
+    <main>
+        <h2>Project Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Role</th>
+                    <th>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.newgrounds.com/portal/view/888761" target="_blank">Sole Survivor - Hungry
+                            Swans</a></td>
+                    <td>UI/UX Engineer</td>
+                    <td>Unity, C#, Unity UI Toolkit</td>
+                </tr>
+                <tr>
+                    <td><a href="https://pentacogstudios.itch.io/noble-roots" target="_blank">Noble Roots - PentaCog
+                            Studio</a></td>
+                    <td>UI/UX Engineer</td>
+                    <td>Unity, C#, Unity UI Toolkit</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('site-header').innerHTML = data;
+            });
+    </script>
+
+</body>
+
+</html>

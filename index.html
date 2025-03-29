@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Douglas Strange | Portfolio</title>
+    <link rel="stylesheet" href="uniform.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -13,77 +14,87 @@
 
 <body>
 
-    <!-- navigation -->
-    <header>
-        <h1>Douglas Strange</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="site-header"></div>
+    <main>
+        <!-- about me section-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a game development programmer with a focus on Unity (C#) and Unreal Engine (C++ & Blueprints).
+                During my time at
+                Full Sail University, I not only built the technical foundation required for game development but also
+                gained experience
+                collaborating with diverse, multi-disciplinary teams.
+            </p>
+            <p>
+                Along this journey, I’ve worked on two complete game projects—both of which are featured below—and each
+                one taught me
+                something new about design, teamwork, and what it means to bring an idea to life.
+            </p>
+            <p>
+                I’m passionate about crafting fantastical games that are both immersive and enjoyable for players of all
+                kinds.
+            </p>
+        </section>
 
-    <!-- about me section-->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-        I'm a game development programmer with a focus on Unity (C#) and Unreal Engine (C++ & Blueprints). During my time at
-        Full Sail University, I not only built the technical foundation required for game development but also gained experience
-        collaborating with diverse, multi-disciplinary teams.
-        </p>
-        <p>
-        Along this journey, I’ve worked on two complete game projects—both of which are featured below—and each one taught me
-        something new about design, teamwork, and what it means to bring an idea to life.
-        </p>
-        <p>
-        I’m passionate about crafting fantastical games that are both immersive and enjoyable for players of all kinds.
-        </p>
-    </section>
-
-    <!-- projects section-->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
+        <!-- projects section-->
+        <section id="projects">
+            <h2>Projects</h2>
             <div>
-                <h3 class="project-title"><a href="https://www.newgrounds.com/portal/view/888761" target="_blank">Sole Survivor - Hungry Swans</a></h3>
-                <p>UI/UX Engineer<br>
-                    A first-person zombie shooter created in Unity as a midterm project. I was responsible for designing and implementing
-                    all menus and HUD elements, with a strong focus on functionality and intuitive layout. Despite challenges during our
-                    two-month development window, this project was a valuable first experience in team-based game development.
-                </p>
-                <p class="Technologies">Technologies Used: Unity, C#, Unity UI Toolkit</p>
+                <div>
+                    <h3 class="project-title"><a href="https://www.newgrounds.com/portal/view/888761"
+                            target="_blank">Sole Survivor - Hungry Swans</a></h3>
+                    <p>UI/UX Engineer<br>
+                        A first-person zombie shooter created in Unity as a midterm project. I was responsible for
+                        designing and implementing
+                        all menus and HUD elements, with a strong focus on functionality and intuitive layout. Despite
+                        challenges during our
+                        two-month development window, this project was a valuable first experience in team-based game
+                        development.
+                    </p>
+                    <p class="Technologies">Technologies Used: Unity, C#, Unity UI Toolkit</p>
+                </div>
+                <div>
+                    <h3 class="project-title"><a href="https://pentacogstudios.itch.io/noble-roots"
+                            target="_blank">Noble Roots - PentaCog Studio</a></h3>
+                    <p>UI/UX Engineer<br>
+                        A farming simulation game with combat elements, built in Unity as my capstone project. I'm
+                        responsible for designing and
+                        programming the entire UI/UX experience, including the HUD, menus, and a fully functional
+                        inventory system developed
+                        during the second month of the project.
+                    </p>
+                    <p class="Technologies">Technologies Used: Unity, C#, Unity UI Toolkit, Git</p>
+                </div>
             </div>
-            <div>
-                <h3 class="project-title"><a href="https://pentacogstudios.itch.io/noble-roots" target="_blank">Noble Roots - PentaCog Studio</a></h3>
-                <p>UI/UX Engineer<br>
-                    A farming simulation game with combat elements, built in Unity as my capstone project. I'm responsible for designing and
-                    programming the entire UI/UX experience, including the HUD, menus, and a fully functional inventory system developed
-                    during the second month of the project.
-                </p>
-                <p class="Technologies">Technologies Used: Unity, C#, Unity UI Toolkit, Git</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- contact me section-->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <h4>For Business Inquiries</h4>
-        <p>E-Mail: douglasalexstrange@gmail.com</p>
-        
-        <a href="https://www.linkedin.com/in/douglas-strange-2a3532232/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin fa-2x"></i>
-        </a>
+        <!-- contact me section-->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <h4>For Business Inquiries</h4>
+            <p>E-Mail: douglasalexstrange@gmail.com</p>
+
+            <a href="https://www.linkedin.com/in/douglas-strange-2a3532232/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
 
 
-    </section>
+        </section>
+    </main>
 
     <!-- footer-->
     <footer>
         <p>&copy; 2024 Douglas Strange, All Rights Reserved</p>
     </footer>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('site-header').innerHTML = data;
+            });
+    </script>
 
 </body>
 
