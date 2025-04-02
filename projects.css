@@ -1,0 +1,82 @@
+/* body {
+    background-color: yellow;
+} */
+
+.projTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    table-layout: fixed;
+}
+
+.projTable th,
+.projTable td {
+    border: 5px solid #a42424;
+    padding: 12px;
+    text-align: center;
+}
+
+.projTable th {
+    background-color: #e63946;
+    /* red header */
+    color: white;
+}
+
+.projTable tr:nth-child(even) {
+    color: blue;
+    background-color: #f2f2f2;
+}
+
+.projTable tr:nth-child(odd) {
+    color: white;
+    background-color: black;
+}
+
+.projTable tr:nth-child(even) a {
+    color: blue;
+    text-decoration: none;
+}
+
+.projTable tr:nth-child(odd) a {
+    color: white;
+    text-decoration: none;
+}
+
+.projTable a:hover {
+    text-decoration: underline;
+}
+
+.projTable tr:nth-child(even) a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.projTable tr:nth-child(odd) a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.projTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e63946;
+    text-decoration: none;
+}
+
+.Complete {
+    background-color: greenyellow;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.Complete span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.N-Complete {
+    font-weight: bold;
+    color: #ff0000;
+}
