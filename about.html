@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
     <link rel="stylesheet" href="uniform.css">
+    <script src="Scripts/genScripts.js" defer></script>
 </head>
 <body>
 
-    <div id ="site-header"></div>
+    <div id ="siteHeader"></div>
 <main>
     <!-- about me section-->
     <section id="about">
@@ -29,23 +31,8 @@
         kinds.
         </p>
     </section>
-
-    <div id="site-footer"></div>
-
 </main>
+    <div id="siteFooter"></div>
 
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('site-header').innerHTML = data;
-            });
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('site-footer').innerHTML = data;
-            });
-    </script>
 </body>
 </html>
