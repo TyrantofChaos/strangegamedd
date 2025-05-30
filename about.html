@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="uniform.css">
+</head>
+<body>
+
+    <div id ="site-header"></div>
+<main>
+    <!-- about me section-->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+        I'm a game development programmer with a focus on Unity (C#) and Unreal Engine (C++ & Blueprints).
+        During my time at
+        Full Sail University, I not only built the technical foundation required for game development but also
+        gained experience
+        collaborating with diverse, multi-disciplinary teams.
+        </p>
+        <p>
+        Along this journey, I’ve worked on two complete game projects—both of which are featured below—and each
+        one taught me
+        something new about design, teamwork, and what it means to bring an idea to life.
+        </p>
+        <p>
+        I’m passionate about crafting fantastical games that are both immersive and enjoyable for players of all
+        kinds.
+        </p>
+    </section>
+
+    <div id="site-footer"></div>
+
+</main>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('site-header').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('site-footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
