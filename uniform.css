@@ -10,6 +10,10 @@ body {
     line-height: 1.6;
     color: #93cecb;
     background-color: #333333;
+}
+
+main
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,8 +65,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
-
-
 section h2 {
     color: #ddda2a;
     margin-bottom: 1em;
@@ -75,7 +77,7 @@ section p {
 
 /* Contact Me Section */
 #contact {
-    margin: 2em;
+
     width: 80%;
     max-width: 800px;
     background-color: #333;
@@ -89,17 +91,17 @@ section p {
 }
 
 /* projects */
-.project-title {
+.projectName {
     color: rgb(202, 53, 50);
     letter-spacing: 1px;
 }
 
-.project-title a {
+.projectName a {
     text-decoration: none;
     color: inherit;
 }
 
-.project-title a:hover {
+.projectName a:hover {
     color: azure;
 }
 

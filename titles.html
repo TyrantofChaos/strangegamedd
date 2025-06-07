@@ -4,55 +4,44 @@
     <meta charset="UTF-8">
     <title>Titles</title>
     <link rel="stylesheet" href="uniform.css">
+    <link rel="stylesheet" href="titles.css">
+    <script src="Scripts/genScripts.js"></script>
 </head>
 <body>
-    <div id="site-header"></div>
+    <div id="siteHeader"></div>
 <main>
+
+    <h1 class="project-title">Projects</h1>
+
     <section id="projects">
-        <!-- projects section-->
-        <h2>Projects</h2>
-        <div>
+
+        <div class="projectsGrid">
             <div>
-                <h3 class="project-title"><a href="https://www.newgrounds.com/portal/view/888761"
+                <h3 class="projectName"><a href="https://www.newgrounds.com/portal/view/888761"
                                              target="_blank">Sole Survivor - Hungry Swans</a></h3>
-                <p>UI/UX Engineer<br>
-                    A first-person zombie shooter created in Unity as a midterm project. I was responsible for
-                    designing and implementing
-                    all menus and HUD elements, with a strong focus on functionality and intuitive layout. Despite
-                    challenges during our
-                    two-month development window, this project was a valuable first experience in team-based game
-                    development.
+                <p> <!-- Embed link in image-->
+                    <a href="solesurvivor.html">
+                        <img src="Images/SoleSurvivorTitle.png" alt="Sole Survivor Title" class="TitleImg">
+                    </a>
                 </p>
+
+
                 <p class="Technologies">Technologies Used: Unity, C#, Unity UI Toolkit</p>
             </div>
             <div>
-                <h3 class="project-title"><a href="https://pentacogstudios.itch.io/noble-roots"
+                <h3 class="projectName"><a href="https://pentacogstudios.itch.io/noble-roots"
                                              target="_blank">Noble Roots - PentaCog Studio</a></h3>
-                <p>UI/UX Engineer<br>
-                    A farming simulation game with combat elements, built in Unity as my capstone project. I'm
-                    responsible for designing and
-                    programming the entire UI/UX experience, including the HUD, menus, and a fully functional
-                    inventory system developed
-                    during the second month of the project.
+                <p> <!-- Embed link in image-->
+                    <a href="nobleroots.html">
+                        <img src="Images/NobleRootsTitle.png" alt="Noble Roots Title" class="TitleImg">
+                    </a>
                 </p>
+
                 <p class="Technologies">Technologies Used: Unity, C#, Unity UI Toolkit, Git</p>
             </div>
         </div>
     </section>
 </main>
-    <div id="site-footer"></div>
+    <div id="siteFooter"></div>
 </body>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('site-header').innerHTML = data;
-            });
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('site-footer').innerHTML = data;
-            });
-    </script>
 </html>

@@ -1,0 +1,35 @@
+.TitleImg
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title
+{
+    text-align: center;
+    color: #cbab1a;
+}
+
+.projectsGrid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.projectsGrid div
+{
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .projectsGrid
+    {
+        grid-template-columns: 1fr;
+    }
+}
