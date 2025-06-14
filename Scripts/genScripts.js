@@ -1,14 +1,21 @@
+function getPathPrefix()
+{
+    const depth = window.location.pathname.split('/').filter(Boolean);
+    return '../'.repeat(depth.length);
+}
+
 function loadHeader()
 {
     const headerTarget = document.getElementById("siteHeader");
     if (!headerTarget) return;
+    const path = getPathPrefix() + 'Reusables/header.html';
 
-    fetch('../Reusables/header.html', {method: 'HEAD'}).then(response=>
+    fetch(path, {method: 'HEAD'}).then(response=>
         {
             if (response.ok)
             {
                 // File Exists, now fetch
-                return fetch('../Reusables/header.html');
+                return fetch(path);
             } else
             {
                 throw new Error('Header not found.');
@@ -23,12 +30,13 @@ function loadFooter()
 {
     const footerTarget = document.getElementById("siteFooter");
     if (!footerTarget) return;
+    const path = getPathPrefix() + 'Reusables/footer.html';
 
-    fetch('../Reusables/footer.html', {method: 'HEAD'}).then(response =>
+    fetch(path, {method: 'HEAD'}).then(response =>
     {
         if (response.ok)
         {
-            return fetch('../Reusables/footer.html');
+            return fetch(path);
         } else
         {
             throw new Error('Footer not found.');
