@@ -3,7 +3,7 @@ function loadHeader()
     const headerTarget = document.getElementById("siteHeader");
     if (!headerTarget) return;
 
-    fetch('../Reusables/Header.html', {method: 'HEAD'}).then(response=>
+    fetch('../Reusables/header.html', {method: 'HEAD'}).then(response=>
         {
             if (response.ok)
             {
@@ -24,7 +24,7 @@ function loadFooter()
     const footerTarget = document.getElementById("siteFooter");
     if (!footerTarget) return;
 
-    fetch('../Reusables/Footer.html', {method: 'HEAD'}).then(response =>
+    fetch('../Reusables/footer.html', {method: 'HEAD'}).then(response =>
     {
         if (response.ok)
         {
