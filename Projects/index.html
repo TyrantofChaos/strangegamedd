@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="uniform.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../Reusables/uniform.css">
+    <link rel="stylesheet" href="../projects.css">
+    <script src="../Scripts/genScripts.js"></script>
 </head>
 
 <body>
 
-    <div id="site-header"></div>
-
     <main>
+        <div id="siteHeader"></div>
         <h2>Project Table</h2>
         <table class="projTable">
             <thead>
@@ -34,18 +34,32 @@
                     <td class="Complete">Complete<br><span>Last Worked: 06/09/2023</span></td>
                 </tr>
                 <tr>
+                    <td class="projTitle">Julien Jumper</td>
+                    <td>Project Lead, Git Master</td>
+                    <td><a href="https://www.hackerrank.com/profile/DAStrange">Hacker Rank Profile</a></td>
+                    <td>Unity, C#, Unity UI Toolkit</td>
+                    <td class="Complete">Not Complete<br><span>Last Worked: 02/29/2025</span></td>
+                </tr>
+                <tr>
+                    <td class="projTitle">MegaDude</td>
+                    <td>Project Lead, Director</td>
+                    <td><a href="https://pentacogstudios.itch.io/noble-roots">Itch</a></td>
+                    <td>Unity, C#, Unity UI Toolkit, Perforce</td>
+                    <td class="Complete">Complete<br><span>Last Worked: 07/25/2024</span></td>
+                </tr>
+                <tr>
                     <td class="projTitle">Noble Roots</td>
                     <td>UI/UX Engineer</td>
                     <td><a href="https://pentacogstudios.itch.io/noble-roots">Itch</a></td>
                     <td>Unity, C#, Unity UI Toolkit, Perforce</td>
-                    <td class="N-Complete">Not Complete<br><span>Last Worked: 03/20/2025</span></td>
+                    <td class="N-Complete">Abandoned<br><span>Last Worked: 03/20/2025</span></td>
                 </tr>
                 <tr>
                     <td class="projTitle">Python Learning</td>
                     <td>Learning Python</td>
                     <td><a href="https://www.hackerrank.com/profile/DAStrange">Hacker Rank Profile</a></td>
                     <td>Unity, C#, Unity UI Toolkit</td>
-                    <td class="N-Complete">Not Complete<br><span>Last Worked: 04/01/2025</span></td>
+                    <td class="N-Complete">Not Complete<br><span>Last Worked: 06/09/2025</span></td>
                 </tr>
                 <tr>
                     <td class="projTitle">C++ Learning</td>
@@ -58,20 +72,20 @@
                     <td class="projTitle">Shujinkou</td>
                     <td>Learning Japanese</td>
                     <td><a href="https://store.steampowered.com/app/1386630/Shujinkou/">Shujinkou Steam Page</a></td>
-                    <td>Unity, C#, Unity UI Toolkit</td>
+                    <td>Note Taking, Language Learning</td>
                     <td class="N-Complete">Not Complete<br><span>Last Worked: 03/31/2025</span></td>
+                </tr>
+                <tr>
+                    <td class="projTitle">strange games</td>
+                    <td>Web Development</td>
+                    <td><a href="#">Your Already Here</a></td>
+                    <td>HTML5, CSS, JavaScript</td>
+                    <td class="N-Complete">Not Complete<br><span>Last Worked: 06/13/2025</span></td>
                 </tr>
             </tbody>
         </table>
     </main>
-
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('site-header').innerHTML = data;
-            });
-    </script>
+    <div id="siteFooter"></div>
 
 </body>
 

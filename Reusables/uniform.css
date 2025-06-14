@@ -75,6 +75,11 @@ section p {
     padding-bottom: 2em;
 }
 
+section b
+{
+    color: #0fcdd9;
+}
+
 /* Contact Me Section */
 #contact {
 
@@ -109,4 +114,36 @@ footer {
     background-color: #333;
     text-align: center;
     color: #fff;
+}
+
+.linkedin-icon
+{
+    background: linear-gradient(
+            -135deg,
+            black 0%,
+            black 33%,
+            red 33%,
+            red 66%,
+            Gold 66%,
+            Gold 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.tumblr-icon
+{
+    background: linear-gradient(
+    135deg,
+    black 0%,
+    black 33%,
+    red 33%,
+    red 66%,
+    Gold 66%,
+    Gold 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
