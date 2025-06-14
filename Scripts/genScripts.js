@@ -28,7 +28,7 @@ function loadFooter()
     {
         if (response.ok)
         {
-            return fetch('../Reusables/Footer.html');
+            return fetch('../Reusables/footer.html');
         } else
         {
             throw new Error('Footer not found.');
