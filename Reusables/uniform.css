@@ -80,6 +80,19 @@ section b
     color: #0fcdd9;
 }
 
+.sectImg
+{
+
+    align-content: center;
+}
+
+.sectImg img
+{
+    margin-left: 2em;
+    width: 90%;
+    box-shadow: #b63f3f 3px 3px 3px;
+}
+
 /* Contact Me Section */
 #contact {
 

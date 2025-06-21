@@ -26,19 +26,6 @@
     border-radius: 8px;
 }
 
-.sectImg
-{
-
-    align-content: center;
-}
-
-.sectImg img
-{
-    margin-left: 2em;
-    width: 90%;
-    box-shadow: #b63f3f 3px 3px 3px;
-}
-
 @media screen and (max-width: 800px)
 {
     .projectsGrid

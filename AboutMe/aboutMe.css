@@ -1,0 +1,24 @@
+#about {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1.5em;
+    background-color: #333030;
+    overflow: hidden; /* prevents float from breaking section height */
+}
+
+.floatImage {
+    float: right;
+    margin-top: .5px;
+    margin-left: 1.5em;
+    box-shadow: #b63f3f 3px 3px 3px;
+}
+
+.programBold
+{
+    color: #d2c41b;
+}
+
+.languageBold
+{
+    color: #cb1111;
+}
