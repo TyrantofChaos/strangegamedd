@@ -4,18 +4,84 @@
     <meta charset="UTF-8">
     <title>Noble Roots</title>
     <link rel="stylesheet" href="../Reusables/uniform.css">
+    <link rel="stylesheet" href="titles.css">
     <script src="../Scripts/genScripts.js"></script>
 </head>
 <body>
     <div id="siteHeader"></div>
     <main>
+        <h1 style="color: #cbab1a">UI/UX Engineer and Systems Programmer</h1>
         <section>
-            <p>UI/UX Engineer<br>
-                A farming simulation game with combat elements, built in Unity as my capstone project. I'm
-                responsible for designing and
-                programming the entire UI/UX experience, including the HUD, menus, and a fully functional
-                inventory system developed
-                during the second month of the project.
+            <p>Noble Roots was expected to be a farming/life simulation game with a focus on automating the farming
+                process; developed using <b>Unity engine and C# programming</b>. You would start as a disgraced noble,
+                and left with nothing but a small farm and be required
+                to build your reputation with the townsfolk. Reputation would be tracked by a point system that
+                incremented as you participated in several activities such as farming, communicating with the
+                town-folk, and completing town quests. This game was a trial in what to do with failure. Every
+                member of our team had issues with all different systems. I learned a lot working with <b>Inventory
+                systems</b> and creating <b>functional UIs</b> during this project, and given the time, I probably
+                could make
+                these systems work as intended.
+                .</p>
+        </section>
+
+        <section>
+            <p>
+                My position for the game was <b>UI/UX Engineer</b> where my focus was to properly display informative
+                elements of the game to the player, and the <b>systems programmer</b> with a primary focus on
+                inventory systems and inventory management systems. During the first month of the game, I designed
+                the base UI elements.
+            </p>
+        </section>
+
+        <section class="sectImg">
+            <img src="../Images/Noble%20Roots%20UI.png" alt="Picture of the UI elements of Noble Roots the game.">
+        </section>
+
+        <section>
+        <p>
+            The <b>Health system</b> was fully functional but never implemented fully due to our gameplay programmer
+            was not
+            able to finish the combat system. However, we were able to finish implementing the <b>stamina system</b>, for
+            testing
+             purposes, the Player Character had a lot more than we planned to use; but we did get values working
+            and changing based on the different actions the player takes. Tilling, Planting, and Watering crops all
+             take stamina, and the meter will slowly drain. We intended for the player to pass out and wake up in
+             their bed the next day if they ran out of stamina. However, we never solved the problem of saving the game
+            which was necessary to stop the field from deleting its contents. Saving the game was one of the biggest
+            issues during the last two months we were working on the game.
+        </p>
+        </section>
+
+        <section>
+            <p>
+                Turns out clocks are easy to make our sound designer finished it for me while I was designing the
+                <b>inventory UI</b>. Unfortunately, since saving does not work the number for the day of the month
+                increments but does not change anything but the number. Day 1 and 2... might as well be the same.
+                Originally we wanted to use an analog clock, but none of us were certain how we would set it
+                up so we kept the digital clock over an analog one.
+            </p>
+        </section>
+
+        <section class="sectImg">
+            <img src="../Images/Noble%20Roots%20Inventory.png" alt="Picture of the inventory system of Noble Roots.">
+        </section>
+
+        <section>
+            <p>
+                This, and the <b>inventory management system</b>, was my baby. Did it work? Haha, no. This is the one thing
+                I wanted to work on when starting the project. We all knew the inventory systems were going to be one
+                of the more challenging tasks early in development. After developing the system for two months, I
+                could see why systems like this usually have a team. Since the gameplay programmer already had the
+                items categorized in a database and managed internally, I thought I would just need to display it.
+                That would work if the player did not want to manage the inventory through the UI.
+
+                Above, I show that the inventory does recognize items that the player picks up. It is supposed to go
+                to the hotbar first which was the first problem. I thought we could just implement the management
+                system and I will fix it after. I am not winning points with this system.<br>
+                <b>I got clicking on the item to select it working.</b><br>
+                <b>I got dragging the item data working.</b><br>
+                I never figured out how to drop the item data in a new slot.
             </p>
         </section>
     </main>
