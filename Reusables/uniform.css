@@ -160,3 +160,14 @@ footer {
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
+
+/* bold controls */
+.programBold
+{
+    color: #d2c41b;
+}
+
+.languageBold
+{
+    color: #cb1111;
+}
