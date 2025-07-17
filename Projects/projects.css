@@ -3,7 +3,7 @@
 } */
 
 .projTable {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin: 1px;
     font-family: 'Times New Roman', Times, serif;
@@ -65,6 +65,7 @@
     text-decoration: none;
 }
 
+/*Table Status Classes*/
 .Complete {
     background-color: greenyellow;
     font-weight: bold;
@@ -79,4 +80,11 @@
 .N-Complete {
     font-weight: bold;
     color: #ff0000;
+}
+
+.Abandoned
+{
+    font-weight: bold;
+    background-color: #000000;
+    color: red;
 }
