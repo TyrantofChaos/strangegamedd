@@ -62,7 +62,7 @@ section {
     background-color: #333030;
     padding: 1.5em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    box-shadow: 14px 14px 8px rgba(0, 0, 0, 1);
 }
 
 section h2 {
@@ -91,6 +91,14 @@ section b
     margin-left: 2em;
     width: 90%;
     box-shadow: #b63f3f 3px 3px 3px;
+}
+
+#bSection {
+    background-color: #333333;
+    color: #fff;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Contact Me Section */
