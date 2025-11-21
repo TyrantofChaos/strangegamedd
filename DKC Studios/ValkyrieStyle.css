@@ -1,0 +1,60 @@
+/*body styling*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #93cecb;
+    background-color: #333333;
+}
+
+/* Header Controls */
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: #d2c41b;
+    text-align: center;
+}
+
+hr
+{
+    border: none;
+    border-top: 2px solid #000000;
+    width: 80%;
+    box-shadow: 0 0 8px 1px black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Details and Summary Style */
+details
+{
+
+}
+
+summary
+{
+
+}
+
+.TitleDetails
+{
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+
+.TitleClass
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ad0b0b;
+}
+
+
+/* Footer Controls */
+footer
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin-top: 2em;
+    text-align: left;
+}
